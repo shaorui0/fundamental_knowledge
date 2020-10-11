@@ -3,12 +3,20 @@
 
 ## OS
 
+### process
+
+
+#### fork
+
+[Implement: tiny shell](https://github.com/shaorui0/tiny_shell)
+[父子进程共享了什么？](https://stackoverflow.com/questions/21220107/what-parent-process-stuff-gets-shared-in-newly-created-child-process-in-linux)
 #### ipc
+
 
 [valuable ref docs](http://beej.us/guide/bgipc/html/multi/index.html)
 [comparing-unix-linux-ipc](https://stackoverflow.com/questions/404604/comparing-unix-linux-ipc)
 
-###### 如何选择，以什么作为考量？
+###### > 如何选择，以什么作为考量？
 
 
 
@@ -22,7 +30,7 @@ Benchmark and Message Boundary:
 - UNIX sockets can connect disparate processes **locally** and has **higher bandwidth** but no inherent message boundaries.
 - TCP/IP sockets can connect any processes, even over the **network** but has **higher overhead** and no inherent message boundaries.
 
-###### 分类
+###### > IPC分类
 
 - anonymous pipe: 
     - usage: cat file | grep word
@@ -48,3 +56,10 @@ Benchmark and Message Boundary:
         - 一些可以运行的例子
 
 - shared memory
+
+
+
+### memory 
+
+
+[what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
