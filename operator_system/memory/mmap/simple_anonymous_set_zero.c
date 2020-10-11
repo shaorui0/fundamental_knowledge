@@ -8,12 +8,17 @@ int main(){
             PROT_READ | PROT_WRITE,
             MAP_PRIVATE | MAP_ANONYMOUS,
             0, 0 );
+    // equivalent to malloc() + mmset(0)
     if(ptr == MAP_FAILED){
         printf("Mapping Failed\n");
         return 1;
     }
 
     // Fill the elements of the array
+    for(int i=0; i<N; i++){
+        ptr[i] = ptr[i] + i;
+    }
+
     for(int i=0; i<N; i++){
         printf("[%d] ",ptr[i]);
     }

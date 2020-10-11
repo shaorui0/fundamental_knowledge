@@ -1,37 +1,60 @@
 # what is mmap
+> 内存是外存的缓存，而linux一切外存都用“文件”作为驱动程序的读写操作的**抽象模型**。所以，linux里一切用户态内存页都应该是“某个文件”的缓存，即使这块内存你不把它用来做外存的缓存而是用于临时存放某些中间结果。linux mmap匿名映射的作用是什么？ 
+https://www.zhihu.com/question/57653599/answer/202133479
 
 ## 从哪里知道的这个概念？
 
 1. 《CSAPP》中，web server使用了这个函数。（静态html文件读入）
 
-```c
-void server_static(fd, filename, filesize){
-    ...
+    ```c
+    void server_static(fd, filename, filesize){
+        ...
 
-    /* send response body to client*/
-    open static file
-    mmap static file content to memory
-    write static file content to client
-    munmap
-}
+        /* send response body to client*/
+        open static file
+        mmap static file content to memory
+        write static file content to client
+        munmap
+    }
 
-```
+    ```
 
-2. 个人项目[Tiny Shell](插入链接)中涉及到**进程间通信**的概念（使用的signal）。这里学习另一种进程间通信的方式。
+2. 个人项目[Tiny Shell](https://github.com/shaorui0/tiny_shell)中涉及到**进程间通信**的概念（使用的signal）。这里学习另一种进程间通信的方式。
 
 ## why mmap
 
 一个手段/方法产生，使用历史原因的。一定是有了需求，才会产生解决方法。mmap是什么？
-mmap是一种进程读取文件的方式，直接从disk读取（抽象过程），那么之前是怎么进程怎么读取数据？ **Malloc**: `Disk <=> Memory <=> Os buffer <=> Addr space`。
+mmap是一种进程读取文件的方式，直接从disk读取（抽象过程），那么之前是怎么进程怎么读取数据？ **Malloc**: `Disk <=> Os buffer <=> Memory  - Addr space`。
 这个过程由于buffer的存在，io次数会显著增加（特别是大文件读写）。mmap典型的优点就是不与buffer打交道，直接对disk上的文件进行**映射**。
 
-[TODO 进程地址空间]
+![进程地址空间](内存地址空间.jpeg)
 
 
 ## what is mmap
 
+[what-are-memory-mapped-page-and-anonymous-page](https://stackoverflow.com/questions/13024087/what-are-memory-mapped-page-and-anonymous-page)
+
+两个维度：
 - private/shared
 - file/anonymous
+
+组合起来就是：
+- PRIVATE FILE MAPPING
+- SHARED FILE MAPPING
+- PRIVATE ANONYMOUS MAPPING
+- SHARED ANONYMOUS MAPPING
+
+如果使用strace追踪这个过程，典型如下：
+```c
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=42238, ...}) = 0
+mmap(NULL, 42238, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff7ca71e000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY)      = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\356\341n8\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1926760, ...}) = 0
+mmap(0x386ee00000, 3750152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x386ee00000
+```
 
 ## mmap如何进行『内存管理』？
 
