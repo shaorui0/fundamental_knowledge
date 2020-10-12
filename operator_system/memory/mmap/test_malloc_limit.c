@@ -39,6 +39,10 @@ int main()
         for (i = 0; i < n; ++i) { 
             printf("%d, ", ptr[i]); 
         } 
+
+
+        // Do not forget to free memory
+        free(ptr);
     } 
   
     return 0; 
