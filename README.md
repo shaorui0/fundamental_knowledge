@@ -7,26 +7,26 @@
 
 
 
-1. [what is coroutine?](./process/coroutine.md)
-2. [diff multi-process / multi_thread / io_resue](./process/diff_multi-process-multi_thread-io_resue.md)
-3. [why stack can overflow but heap cannot?](./process/why_stack_can_overflow_but_heap.md)
+- [what is coroutine?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/coroutine.md)
+-  [diff multi-process / multi_thread / io_resue](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/diff_multi-process-multi_thread-io_resue.md)
+- [why stack can overflow but heap cannot?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/why_stack_can_overflow_but_heap.md)
 
 #### fork
 
-[Implement: tiny shell](https://github.com/shaorui0/tiny_shell)
-[what parent process stuff gets shared in newly created child process?](https://stackoverflow.com/questions/21220107/what-parent-process-stuff-gets-shared-in-newly-created-child-process-in-linux)
+- [Implement: tiny shell](https://github.com/shaorui0/tiny_shell)
+- [what parent process stuff gets shared in newly created child process?](https://stackoverflow.com/questions/21220107/what-parent-process-stuff-gets-shared-in-newly-created-child-process-in-linux)
 
 #### ipc
 
 
-[how to choose ipc type?](./operator_system/process/ipc/diff_ipc.md)
+- [how to choose ipc type?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/ipc/diff_ipc.md)
 
 
 
 ### memory 
 
 
-[what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
+- [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
 
 
 ## Distributed system
@@ -34,7 +34,7 @@
 
 ### fundamental knowledge
 
-[what is high concurrency?](./distributed_system/what_is_high_concurrency.md)
+[what is high concurrency?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_high_concurrency.md)
 
 
 ## others
@@ -43,4 +43,4 @@
 
 #### RPC
 
-[what is proto buf?](./other/message_passing/rpc/what_is_protobuf.md)
+[what is proto buf?](https://github.com/shaorui0/fundamental_knowledge/tree/main/other/message_passing/rpc/what_is_protobuf.md)
