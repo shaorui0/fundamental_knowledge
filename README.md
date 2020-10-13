@@ -68,3 +68,20 @@ Benchmark and Message Boundary:
 
 
 [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
+
+
+## Distributed system
+
+
+### fundamental knowledge
+
+[what_is_high_concurrency](./distributed_system/what_is_high_concurrency.md)
+
+
+## others
+
+### message passing
+
+#### RPC
+
+[what is proto buf?](./other/message_passing/rpc/what_is_protobuf.md)
