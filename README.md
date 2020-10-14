@@ -44,7 +44,7 @@
 
 - [what is map reduce?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_map_reduce.md)
 
-
+- [diff_between_partition_and_sharding.md?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md.md)
 
 ## language
 
