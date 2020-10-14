@@ -14,7 +14,7 @@
 #### fork
 
 - [Implement: tiny shell](https://github.com/shaorui0/tiny_shell)
-- [what parent process stuff gets shared in newly created child process?](https://stackoverflow.com/questions/21220107/what-parent-process-stuff-gets-shared-in-newly-created-child-process-in-linux)
+- [what cparent process stuff gets shared in newly created child process?](https://stackoverflow.com/questions/21220107/what-parent-process-stuff-gets-shared-in-newly-created-child-process-in-linux)
 
 #### ipc
 
@@ -40,8 +40,9 @@
 
 ### fundamental knowledge
 
-[what is high concurrency?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_high_concurrency.md)
+- [what is high concurrency?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_high_concurrency.md)
 
+- [what is map reduce?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_map_reduce.md)
 
 ## others
 
@@ -49,4 +50,4 @@
 
 #### RPC
 
-[what is proto buf?](https://github.com/shaorui0/fundamental_knowledge/tree/main/other/message_passing/rpc/what_is_protobuf.md)
+- [what is proto buf?](https://github.com/shaorui0/fundamental_knowledge/tree/main/other/message_passing/rpc/what_is_protobuf.md)
