@@ -28,6 +28,12 @@
 
 - [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
 
+## DATABASE
+
+### index
+
+- [difference between Hash and B-Tree on index](https://github.com/shaorui0/fundamental_knowledge/tree/main/database/index/diff_hash_btree.md)
+
 
 ## Distributed system
 
