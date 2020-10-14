@@ -44,6 +44,19 @@
 
 - [what is map reduce?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_map_reduce.md)
 
+
+
+## language
+
+
+### python
+
+
+#### debug
+
+- [how to use pdb??](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/debug/how_use_pdb.md)
+
+
 ## others
 
 ### message passing
