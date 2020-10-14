@@ -102,9 +102,35 @@ python的yield，生成器，[TODO what is generator]()
 
 
 
-#####  协程写生产者消费者（TODO）
+#####  协程写生产者消费者
 
 ```
+import time
+
+def consumer():
+    r = ''
+    while True:
+        n = yield r# 进行第二次迭代才重新回来
+        if not n:
+            return
+        print('[CONSUMER] Consuming %s...' % n)
+        time.sleep(1)
+        r = '200 OK'
+
+def produce(c):
+    c.next()
+    n = 0
+    while n < 5:
+        n = n + 1
+        print('[PRODUCER] Producing %s...' % n)
+        r = c.send(n) # 这里的send也是根据yield来的
+        print('[PRODUCER] Consumer return: %s' % r) # 这里只是一个返回结果
+    c.close()
+
+if __name__=='__main__':
+    c = consumer()
+    produce(c)
+
 
 
 ```
