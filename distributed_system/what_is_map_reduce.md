@@ -83,4 +83,4 @@ For HIVE there is **no process to communicate Map/Reduce tasks directly**.
 
 After the Hive finishes the **query execution**, the result is submitted to the **JobTracker**, which resides on YARN. The JobTracker consists of Map/Reduce tasks which runs the mapper and reducer job to store the final result in the **HDFS**. The Map task deserializes(reading) the data from the HDFS and the Reduce task serializes(writing) the data as the result of the Hive query.
 
-![hive_procecss_detail](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/hive_procecss_detail.png)
+![hive_procecss_detail](https://github.com/shaorui0/fundamental_knowledge/blob/main/distributed_system/hive_procecss_detail.png)
