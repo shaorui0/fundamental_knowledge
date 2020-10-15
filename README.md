@@ -50,9 +50,9 @@
 
 #### ref
 
-- [Awesome Blog: Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
+- [ref: Awesome Blog: Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
 
-- [PPT-scalability-availability-stability-patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/73-KeyValue_databasesColumn_databasesDocument_databasesGraph_databasesDatastructure)
+- [ref: PPT-scalability-availability-stability-patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/73-KeyValue_databasesColumn_databasesDocument_databasesGraph_databasesDatastructure)
 
 
 ## language
@@ -60,10 +60,11 @@
 
 ### python
 
+- [编码方式](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/encode_type.md)
 
 #### debug
 
-- [how to use pdb??](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/debug/how_use_pdb.md)
+- [how to use pdb?](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/debug/how_use_pdb.md)
 
 
 ## others
