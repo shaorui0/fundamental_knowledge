@@ -38,6 +38,7 @@
 ## Distributed system
 
 
+
 ### fundamental knowledge
 
 - [what is high concurrency?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_high_concurrency.md)
@@ -45,6 +46,14 @@
 - [what is map reduce?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_map_reduce.md)
 
 - [diff_between_partition_and_sharding.md?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md.md)
+
+
+#### ref
+
+- [Awesome Blog: Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
+
+- [PPT-scalability-availability-stability-patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/73-KeyValue_databasesColumn_databasesDocument_databasesGraph_databasesDatastructure)
+
 
 ## language
 
