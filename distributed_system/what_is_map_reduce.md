@@ -73,3 +73,14 @@ mapreduce为了什么？更好的并发，一切为了效率？它是一种编�
 
 ## WHY
 > 更好的并发，一切为了效率
+
+
+# relationship-between-hive-and-hadoop-mapreduce
+
+**Map Reduce** is the framework used to process the data which is stored in the HDFS, here java native language is used to writing Map Reduce programs.
+Hive is a **batch processing framework**. This component process the data using a language called Hive Query Language(HQL). Hive prevents writing MapReduce programs in Java. Instead one can use SQL like language to do their daily tasks.
+For HIVE there is **no process to communicate Map/Reduce tasks directly**. 
+
+After the Hive finishes the **query execution**, the result is submitted to the **JobTracker**, which resides on YARN. The JobTracker consists of Map/Reduce tasks which runs the mapper and reducer job to store the final result in the **HDFS**. The Map task deserializes(reading) the data from the HDFS and the Reduce task serializes(writing) the data as the result of the Hive query.
+
+![hive_procecss_detail](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/hive_procecss_detail.png)
