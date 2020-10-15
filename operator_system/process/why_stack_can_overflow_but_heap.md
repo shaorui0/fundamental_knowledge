@@ -4,7 +4,7 @@
 
 ## stack
 
-TODO 进程地址空间png
+![进程地址空间](https://github.com/shaorui0/fundamental_knowledge/blob/main/operator_system/memory/mmap/%E5%86%85%E5%AD%98%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4.jpeg)
 
 
 一个32bit字长OS，进程栈大小通常是8MB。一些比较危险的操作（`gets()`，分配一个指定大小的buffer，通过`while(gets(buf) != 0)`，可以一直读下去。）输入过多会导致栈溢出，甚至直接覆盖栈其他部分。比如**ret addr**，这样可能导致跳转到不可控的一个函数上----著名的『**缓冲区溢出攻击**』。

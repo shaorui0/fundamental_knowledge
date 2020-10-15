@@ -1,4 +1,4 @@
-# fundamental knowledge
+# Fundamental knowledge
 
 
 ## OS
@@ -14,7 +14,7 @@
 #### fork
 
 - [Implement: tiny shell](https://github.com/shaorui0/tiny_shell)
-- [what cparent process stuff gets shared in newly created child process?](https://stackoverflow.com/questions/21220107/what-parent-process-stuff-gets-shared-in-newly-created-child-process-in-linux)
+- [REF: what cparent process stuff gets shared in newly created child process?](https://stackoverflow.com/questions/21220107/what-parent-process-stuff-gets-shared-in-newly-created-child-process-in-linux)
 
 #### ipc
 
@@ -28,7 +28,7 @@
 
 - [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
 
-## DATABASE
+## Database
 
 ### index
 
@@ -45,17 +45,21 @@
 
 - [what is map reduce?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_map_reduce.md)
 
-- [diff_between_partition_and_sharding.md?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md.md)
+- [diff_between_partition_and_sharding.md?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md)
 
+### message passing
 
+#### RPC
+
+- [what is proto buf?](https://github.com/shaorui0/fundamental_knowledge/tree/main/other/message_passing/rpc/what_is_protobuf.md)
 #### ref
 
-- [ref: Awesome Blog: Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
+- [REF: Awesome Blog: Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
 
-- [ref: PPT-scalability-availability-stability-patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/73-KeyValue_databasesColumn_databasesDocument_databasesGraph_databasesDatastructure)
+- [REF: PPT-scalability-availability-stability-patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/73-KeyValue_databasesColumn_databasesDocument_databasesGraph_databasesDatastructure)
 
 
-## language
+## Language
 
 
 ### python
@@ -65,12 +69,3 @@
 #### debug
 
 - [how to use pdb?](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/debug/how_use_pdb.md)
-
-
-## others
-
-### message passing
-
-#### RPC
-
-- [what is proto buf?](https://github.com/shaorui0/fundamental_knowledge/tree/main/other/message_passing/rpc/what_is_protobuf.md)
