@@ -64,7 +64,7 @@
 
 ### python
 
-- [编码方式](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/encode_type.md)
+- [编码格式](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/encode_type.md)
 
 #### debug
 
