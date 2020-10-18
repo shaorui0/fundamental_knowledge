@@ -8,7 +8,7 @@
 
 
 - [what is coroutine?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/coroutine.md)
--  [diff multi-process / multi_thread / io_resue](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/diff_multi-process-multi_thread-io_resue.md)
+-  [diff multi-process / multi_thread / io_reuse](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/diff_multi-process-multi_thread-io_resue.md)
 - [why stack can overflow but heap cannot?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/why_stack_can_overflow_but_heap.md)
 
 #### fork
@@ -45,7 +45,7 @@
 
 - [what is map reduce?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_map_reduce.md)
 
-- [diff_between_partition_and_sharding.md?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md)
+- [diff between partition and sharding](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md)
 
 ### hadoop family
 
@@ -69,7 +69,9 @@
 
 ### python
 
-- [编码格式](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/encode_type.md)
+- [encode format](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/encode_type.md)
+
+- [what is the Python Global Interpreter Lock (GIL)?](https://github.com/shaorui0/fundamental_knowledge/tree/main/language/python/what_is_gil.md)
 
 #### debug
 
