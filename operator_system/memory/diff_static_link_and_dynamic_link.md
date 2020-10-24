@@ -32,9 +32,9 @@
 动态库是一种更让人倾向的方案，但之前出过问题 (google DLL hell)
 
 
-![静态过程](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/src_pic/static_link.png)
+![静态过程](./src_pic/static_link.png)
 
-![进程地址空间](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/src_pic/内存地址空间.jpeg)
+![进程地址空间](./src_pic/%E5%86%85%E5%AD%98%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4.jpeg)
 
 
 ## ref
