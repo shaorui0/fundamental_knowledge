@@ -66,6 +66,8 @@
 
 ## Web
 
+### fundamental knowledge
+
 - [diff_between_post_and_put](https://github.com/shaorui0/fundamental_knowledge/tree/main/web/diff_between_post_and_put.md)
 
 ## Language
