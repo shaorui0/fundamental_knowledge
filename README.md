@@ -29,6 +29,14 @@
 - [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
 - [diff static link and dynamic link](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/diff_static_link_and_dynamic_link.md)
 
+### Network programming
+
+##### blocking queue
+
+- [how to use blocking queue?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/network_programming/how_to_use_blocking_queue.md)
+- [TODO how to implement blocking queue]()
+
+
 ## Database
 
 ### index
