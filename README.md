@@ -20,13 +20,14 @@
 
 
 - [how to choose ipc type?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/ipc/diff_ipc.md)
+- [waitpid's flag set](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/ipc/waitpid_flag_set.md)
 
 
-
-### memory 
+### memory
 
 
 - [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
+- [diff static link and dynamic link](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/diff_static_link_and_dynamic_link.md)
 
 ## Database
 
@@ -63,6 +64,9 @@
 
 - [REF: PPT-scalability-availability-stability-patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/73-KeyValue_databasesColumn_databasesDocument_databasesGraph_databasesDatastructure)
 
+## Web
+
+- [diff_between_post_and_put](https://github.com/shaorui0/fundamental_knowledge/tree/main/web/diff_between_post_and_put.md)
 
 ## Language
 
