@@ -33,9 +33,7 @@
 
 ##### blocking queue
 
-- [how to use blocking queue?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/network_programming/how_to_use_blocking_queue.md)
-- [TODO how to implement blocking queue]()
-
+- [how to use and implement blocking queue?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/network_programming/how_to_use_blocking_queue.md)
 
 ## Database
 
