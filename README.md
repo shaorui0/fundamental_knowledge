@@ -8,7 +8,7 @@
 
 
 - [what is coroutine?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/coroutine.md)
--  [diff multi-process / multi_thread / io_reuse](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/diff_multi-process-multi_thread-io_resue.md)
+-  [DIFF: multi-process / multi_thread / io_reuse](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/diff_multi-process-multi_thread-io_resue.md)
 - [why stack can overflow but heap cannot?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/process/why_stack_can_overflow_but_heap.md)
 
 #### fork
@@ -27,19 +27,20 @@
 
 
 - [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
-- [diff static link and dynamic link](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/diff_static_link_and_dynamic_link.md)
+- [DIFF: static link and dynamic link](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/diff_static_link_and_dynamic_link.md)
 
 ### Network programming
 
 ##### blocking queue
 
+- [DIFF: blocking/non-blocking, synchronism/asynchronism](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/network_programming/fundamental)
 - [how to use and implement blocking queue?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/network_programming/how_to_use_blocking_queue.md)
 
 ## Database
 
 ### index
 
-- [difference between Hash and B-Tree on index](https://github.com/shaorui0/fundamental_knowledge/tree/main/database/index/diff_hash_btree.md)
+- [DIFF: Hash and B-Tree on index](https://github.com/shaorui0/fundamental_knowledge/tree/main/database/index/diff_hash_btree.md)
 
 
 ## Distributed system
@@ -52,7 +53,7 @@
 
 - [what is map reduce?](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/what_is_map_reduce.md)
 
-- [diff between partition and sharding](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md)
+- [DIFF: partition and sharding](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md)
 
 ### hadoop family
 
@@ -74,7 +75,7 @@
 
 ### fundamental knowledge
 
-- [diff_between_post_and_put](https://github.com/shaorui0/fundamental_knowledge/tree/main/web/diff_between_post_and_put.md)
+- [DIFF: post and put](https://github.com/shaorui0/fundamental_knowledge/tree/main/web/diff_between_post_and_put.md)
 
 ## Language
 
