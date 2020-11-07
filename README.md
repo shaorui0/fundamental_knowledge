@@ -43,6 +43,11 @@
 - [DIFF: Hash and B-Tree on index](https://github.com/shaorui0/fundamental_knowledge/tree/main/database/index/diff_hash_btree.md)
 
 
+### redis
+
+- [LRU algorithm and LRU implementation of Redis](https://github.com/shaorui0/fundamental_knowledge/tree/main/database/redis/redis_lru.md)
+- [How Redis expires keys?](https://github.com/shaorui0/fundamental_knowledge/tree/main/database/redis/redis_ttl.md)
+
 ## Distributed system
 
 
