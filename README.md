@@ -29,6 +29,14 @@
 - [what is mmap?](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/mmap)
 - [DIFF: static link and dynamic link](https://github.com/shaorui0/fundamental_knowledge/tree/main/operator_system/memory/diff_static_link_and_dynamic_link.md)
 
+
+### Network
+
+
+- [what is dns?](https://github.com/shaorui0/fundamental_knowledge/tree/main/network/what_is_dns.md)
+- [tcp status machine](https://github.com/shaorui0/fundamental_knowledge/tree/main/network/tcp_status_machine.md)
+
+
 ### Network programming
 
 ##### blocking queue
