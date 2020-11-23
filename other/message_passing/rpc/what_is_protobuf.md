@@ -16,6 +16,21 @@ jsonObj = MessageToJson(pb)
 # why protobuf?
 
 Some scenarios require **schema** (Define once, use everywhere).
+【速度】
+- 编解码的方式和传统的二进制不太一样，
+- 三个部分分别是长度、key_num、value（这样编解码起来快了很多），主要节省的地方就在key不用使用字符串，同时长度是固定的，直接读就行，而不需要通过解析，比如遇到括号或者逗号这样
+- float在json中的编解码也慢（not designed for numbers）
+
+【schema带来的】
+- easier to bind to objects；json是典型的string。
+
+【可读性】
+- json更可读
+
+【普适性】
+pb基本使用量级是赶不上json的
+
+https://www.bizety.com/2018/11/12/protocol-buffers-vs-json/#:~:text=Protobuf%20is%20easier%20to%20bind,is%20not%20designed%20for%20numbers.&text=The%20library%20implementation%20for%20Protobuf,be%20a%20faster%20format%20overall
 
 ### pros
 
@@ -42,8 +57,28 @@ think XML, but smaller, faster, and simpler(really?).
 - The operational burden of running a different kind of network service is too great
 
 
+### 优势 TODO
 
+# protobuf有什么优势？
 
+0. JSON没有紧凑的动作，单个pack数据量也比较大
+1. PB编解码速度快，有schema，二进制过程进行了“紧凑”（典型就是
+2. 向前兼容（旧代码也能读新数据），当然，这需要在修改schema定义的时候，有注意事项。比如数字不能瞎改、不能删除required等
+    field_tag(replace key_content) + type + length + value_content
+    这就意味着：
+    - 可以更改key的名称（field_tag只记录了数字），那显然的，数字不能修改
+    - 添加字段只能是可选的，或者具有默认值
+    - repeated的设计思想在于“前后兼容性”
+        - optional => repeated
+        - 旧代码看新数据，只能看到最后一个元素
+        - 新代码看旧数据，看到的是0/1个元素的list
+3. 向后兼容（代码通常更新最快，数据可能也会跟着更新，但是会不会有旧数据过来？比如说上游，比如说协调还没有完全一致）
+
+4. 支持的数据格式也比较多，JSON对数字（整数、浮点数）支持不好，编解码速度也会比较慢
+
+https://www.bizety.com/2018/11/12/protocol-buffers-vs-json/#:~:text=Protobuf%20is%20easier%20to%20bind,is%20not%20designed%20for%20numbers.&text=The%20library%20implementation%20for%20Protobuf,be%20a%20faster%20format%20overall
+
+https://vonng.gitbooks.io/ddia-cn/content/ch4.html
 # how to use
 
 ```
