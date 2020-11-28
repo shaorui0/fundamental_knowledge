@@ -1,5 +1,23 @@
 # What is the Python Global Interpreter Lock (GIL)?
 
+> Python is multithreaded, it just doesn't allow two threads to run Python code concurrently. 
+[[from stackoverflow: a-clean-lightweight-alternative-to-pythons-twisted](https://stackoverflow.com/questions/1824418/a-clean-lightweight-alternative-to-pythons-twisted)]
+
+## 聊聊python的多线程
+
+[why-is-a-python-i-o-bound-task-not-blocked-by-the-gil](https://stackoverflow.com/questions/29270818/why-is-a-python-i-o-bound-task-not-blocked-by-the-gil)
+
+> The GIL in CPython1 is only concerned with Python code being executed. A thread-safe C extension that uses a lot of CPU might release the GIL as long as it doesn't need to interact with the Python runtime.
+
+1. 搞清楚GIL的级别（抽象在哪一层？）。GIL只是**限制多线程读取Cpython的bytecode**，一次只能有一个线程**execute python bytecode**，但是所有的线程此时都是**running**。
+2. 所以Cpython的C扩展部分，是不限制多线程的。（很多库，比如multithreading或者numpy是C扩展，这个是可以多线程的）
+
+> Releasing the GIL around I/O (blocking or not, using CPU or not) is the same thing - until the data is moved into Python there is no reason to acquire the GIL.
+
+3. 所以关于python的IO bounding，多线程的适用场景完全合适。
+
+本质是需要理解GIL锁了哪些东西，**瓶颈**在哪里？
+
 ## GIL解决了什么问题？
 
 GIL本质上解决的是**内存安全**问题。
