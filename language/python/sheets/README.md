@@ -1,1 +1,0 @@
-[quick sort]](./sort/quick_sort.py)
