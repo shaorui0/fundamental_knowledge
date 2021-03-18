@@ -49,10 +49,13 @@
                 idx += 1
         # check result list
     ```
+    
 6. Pattern: In-place Reversal of a LinkedList，链表翻转经典题目：Reverse a LinkedList (easy)Reverse a Sub-list (medium)Reverse every K-element Sub-list (medium)
     - 典型链表翻转注意手动尝试中间的过程，`HEAD->2->1->3->4->null`
+
 7. Pattern: Tree Breadth First Search，树上的BFS经典题目：Binary Tree Level Order Traversal (easy)Reverse Level Order Traversal (easy)Zigzag Traversal (medium)Level Averages in a Binary Tree (easy)Minimum Depth of a Binary Tree (easy)Level Order Successor (easy)Connect Level Order Siblings (medium)
     - Queue
+
 8. Pattern: Tree Depth First Search，树上的DFS经典题目：Binary Tree Path Sum (easy)All Paths for a Sum (medium)Sum of Path Numbers (medium)Path With Given Sequence (medium)Count Paths for a Sum (medium)
     - 本质和**permutations**类似（dfs，分支if left/if right 和 for i in list）
     - 主要理解dfs怎么工作
@@ -68,17 +71,21 @@
 
 11. Pattern: Modified Binary Search，改造过的二分经典题目：Order-agnostic Binary Search (easy)Ceiling of a Number (medium)Next Letter (medium)Number Range (medium)Search in a Sorted Infinite Array (medium)Minimum Difference Element (medium)Bitonic Array Maximum (easy)
     - 经典题型是**多次方程函数求解**，思路是**逼近误差值**，和开方（不一定是二次方，三次方同样是二分，**二分的本质是每次排除一半不可能的情况使得复杂度降低到log(n）** 思路一致。
+
 12. Pattern: Top ‘K’ Elements，前K个系列经典题目：Top ‘K’ Numbers (easy)Kth Smallest Number (easy)‘K’ Closest Points to the Origin (easy)Connect Ropes (easy)Top ‘K’ Frequent Numbers (medium)Frequency Sort (medium)Kth Largest Number in a Stream (medium)‘K’ Closest Numbers (medium)Maximum Distinct Elements (medium)Sum of Elements (medium)Rearrange String (hard)
     - heap / quick sort
         - 快排思想本质是每次找到的pivot的左右两部分处于它们应该在的位置，然后**分治**处理
+
 13. Pattern: K-way merge，多路归并经典题目：Merge K Sorted Lists (medium)Kth Smallest Number in M Sorted Lists (Medium)Kth Smallest Number in a Sorted Matrix (Hard)Smallest Number Range (Hard)
     - 思路直观，编程不难，主要是要有并发的思维。
+
 14. Pattern: 0/1 Knapsack (Dynamic Programming)，0/1背包类型经典题目：0/1 Knapsack (medium)Equal Subset Sum Partition (medium)Subset Sum (medium)Minimum Subset Sum Difference (hard)
     - DP的核心是空间换时间 + **状态转移**
     - 具体到**背包问题**的核心是，对『选与不选』某个物品，传递下一层级的状态
     - 比较**耗空间**的方式是**二维数组**，某些问题可以优化到一维。思路是观察二维数组的实现，行状态（i）的转移，只与上一行有关（i-1），那这里是可以省略行信息的。
     - **初始状态**肯定是所有的都不选和为0的情况是一定会出现的（True），以及确定第一个dp[0][nums[0]] = True
         - 同时，优化成一维以后，注意**从大到小**计算。因为dp[j]的状态依赖dp[j - cur_num]，但是从小到大的话，dp[j - cur_num]不再是上一行的状态，而是这一行的状态（**内层循环非外层循环**）。
+
 15. Pattern: Topological Sort (Graph)，拓扑排序类型经典题目：Topological Sort (medium)Tasks Scheduling (medium)Tasks Scheduling Order (medium)All Tasks Scheduling Orders (hard)Alien Dictionary (hard)
 拓扑排序是说输入一些依赖关系，输出一棵或多棵树（Airflow DAG）
     - 回忆一下图的性质，同时规定了有向
