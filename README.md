@@ -72,6 +72,9 @@
 
 - [DIFF: partition and sharding](https://github.com/shaorui0/fundamental_knowledge/tree/main/distributed_system/diff_between_partition_and_sharding.md)
 
+
+- [what is nginx?]()
+
 ### hadoop family
 
 - [REF: Hadoop vs. HDFS vs. HBase vs. Hive](https://medium.com/better-programming/hadoop-vs-hdfs-vs-hbase-vs-hive-ddfffd45d222)
