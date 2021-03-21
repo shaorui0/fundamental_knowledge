@@ -61,4 +61,3 @@ print(dp)
 # n = len(val) 
 # print(knapSack(W, wt, val, n)) 
 
-TODO 意思有点搞错了，前三个，是指0/1/2这三个

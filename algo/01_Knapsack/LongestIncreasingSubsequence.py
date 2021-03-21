@@ -1,6 +1,10 @@
 # 最长上升子序列
 
 # 简单的动态规划就可以做，典型的使用
+# dp 数组中保存什么东西？当前数字为尾的最长子序列是多少？同时还要满足 f(right) = max(f(left)) + 1 and a_right > a_left
+nums [2,3,1 .. 4]
+dp   [1,2,1 .. 3]
+
 init dp[all] = 1
 for i in [0, n-1]:
     for j in [0, i]:

@@ -81,11 +81,21 @@
 
 14. Pattern: 0/1 Knapsack (Dynamic Programming)，0/1背包类型经典题目：0/1 Knapsack (medium)Equal Subset Sum Partition (medium)Subset Sum (medium)Minimum Subset Sum Difference (hard)
     - DP的核心是空间换时间 + **状态转移**
+    - 本质是的倒推： f(n) -> y(f(n-1)) -> ... ->z(f(0)), 然后f(0)一开始被初始化了。
     - 具体到**背包问题**的核心是，对『选与不选』某个物品，传递下一层级的状态
     - 数学思想上，本质是进行倒推，从是否考虑第i个物品 ---> 改变i-1的一些状态，让其考虑或不考虑以后能够满足i的结果
     - 比较**耗空间**的方式是**二维数组**，某些问题可以优化到一维（比如不与太前面的结果相关，考虑奇偶即可）。思路是观察二维数组的实现，行状态（i）的转移，**只与**上一行有关（i-1），那这里是可以省略行信息的。
     - **初始状态**肯定是所有的都不选和为0的情况是一定会出现的（True），以及确定第一个dp[0][nums[0]] = True
         - 同时，优化成一维以后，注意**从大到小**计算。因为dp[j]的状态依赖dp[j - cur_num]，但是从小到大的话，dp[j - cur_num]不再是上一行的状态，而是这一行的状态（**内层循环非外层循环**）。
+    - 【关于二维优化成一维】
+        - volume/worth/cost 这些信息都需要保存，但是 i 只与前面一个相关，从这个方面入手
+    ```
+    dp[i][volume] = worth
+    # 初始化一个二维数组
+    # 然后每个数组表示的含义是什么？前i个物品在重量为volume的时候“当前”最大价值是多少？
+        # 前i个，只能考虑前i个，所以选择面会比较窄   
+
+    ```
 
 15. Pattern: Topological Sort (Graph)，拓扑排序类型经典题目：Topological Sort (medium)Tasks Scheduling (medium)Tasks Scheduling Order (medium)All Tasks Scheduling Orders (hard)Alien Dictionary (hard)
 拓扑排序是说输入一些依赖关系，输出一棵或多棵树（Airflow DAG）
@@ -115,3 +125,4 @@
             else:
                 return False
         ```
+

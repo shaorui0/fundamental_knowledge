@@ -18,7 +18,7 @@ def merge_intervals(intervals):
         if len(result) == 0 or result[-1][1] < current_list[0]:
             result.append(current_list)
             #push current list to result
-        else: # 有交集
+        else: # 有交集（覆盖或交叉）
             result[-1][1] = max(current_list[1], result[-1][1]) # 右边界扩大，注意可能是包含关系
 
     return result
