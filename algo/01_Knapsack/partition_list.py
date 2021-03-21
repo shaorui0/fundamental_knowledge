@@ -1,5 +1,7 @@
 
-print("分割等和子集")
+print("分割等和子集, https://leetcode-cn.com/problems/partition-equal-subset-sum/")
+
+优化解：https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/416-fen-ge-deng-he-zi-ji-dong-tai-gui-hu-csk5/
 # 背包问题的核心是什么？选与不选，然后会有一个退化状态转移的问题
 # dp[i][j] = 
 # - 选：dp[i-1][j-nums[i]] 
@@ -20,6 +22,9 @@ print("分割等和子集")
 # 显然，dp[i][nums[i]] = True, 其他都是False
 # 以及，所有的dp[i][0] = True, 表示我不选每一个，都等于0
 def canPartition(a_list):
+    """
+    输出：是否能够找到 true/false
+    """
     # 边界
     if a_list is None or a_list == []:
         return False
