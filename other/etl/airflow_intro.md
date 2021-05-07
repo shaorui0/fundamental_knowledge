@@ -74,7 +74,7 @@ pip install  apache-airflow[mysql]==1.10.12  --constraint "https://raw.githubuse
 # airflow 升级 py27-airflow-1.10.12 不加constraint会报错
 pip install -U  apache-airflow==1.10.12  --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-1.10.12/constraints-2.7.txt"
 # fbac前端创建用户
-airflow create_user -r Admin -u admin -e qinyufeng@baidu.com -f qin -l yufeng -p admin
+airflow create_user -r Admin -u admin -e xx@gmail.com -f qin -l xx -p admin
 ```
 
 [> REF BLOG](https://zhuanlan.zhihu.com/p/90282578)
