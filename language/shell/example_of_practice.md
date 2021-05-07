@@ -22,16 +22,6 @@ END_DAY=${INPUT_DATE}
 BEGIN_DAY=$(date +"%Y-%m-%d" -d "-7 days ${END_DAY}")
 CVREMARK_DAY=$(date +"%Y%m%d" -d "${END_DAY}")
 
-# 数据库配置
-HOST="10.233.31.50"
-PORT="7550"
-USER="leizihe"
-PASSWD="U3m7Aetf8T"
-
-# hadoop配置
-HADOOP_PATH="/home/work/bin/hadoop-client/hadoop/bin/hadoop"
-CVREMARK_HDFS="hdfs://nmg01-mulan-hdfs.dmop.baidu.com:54310/app/ecom/aries/fengkong/zhukaiwen/cvremark"
-
 
 #获取监察数据：userid，违规类型，是否A类，来源，批注占位，审核时间，推送时间
 function get_jc()
